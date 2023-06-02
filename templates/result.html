@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19 Chest X-Ray Classifier - Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result-style.css') }}">
+</head>
+<body>
+    <h1>COVID-19 Chest X-Ray Classifier - Result</h1>
+    <div class="result-container">
+        {% if result_text == "Check your input image" %}
+            <h2>Prediction Result</h2>
+            <p>{{ result_text }}</p>
+        {% else %}
+            <h2>Prediction Result</h2>
+            <p><strong>Result:</strong> {{ result_text }}</p>
+            <p><strong>Confidence:</strong> {{ confidence }}</p>
+            <img src="{{ url_for('static', filename='uploaded_image.jpg') }}" alt="Uploaded Image">
+        {% endif %}
+    </div>
+</body>
+</html>

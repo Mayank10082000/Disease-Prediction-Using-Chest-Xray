@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+    margin-top: 50px;
+  }
+  
+  .result-container {
+    margin-top: 50px;
+    border: 1px solid #333;
+    padding: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  img {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  
+  /* Optional: Adding some additional styles for emphasis */
+  .result-container {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
